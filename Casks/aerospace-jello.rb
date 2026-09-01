@@ -2,7 +2,7 @@ cask "aerospace-jello" do
   version "0.21.3-jello.1"
   sha256 "a36cb5eb0e49ec97d5791081f49e79b724c97e7412f2728e682679164d9b1180"
 
-  url "file://#{Dir.home}/Library/AeroSpace-Jello/AeroSpace-v#{version}.zip"
+  url "https://github.com/ManofJELLO/AeroSpace_Jello/releases/download/v#{version}/AeroSpace-v#{version}.zip"
   name "AeroSpace (Jello fork)"
   desc "Tiling window manager that preserves layout across native fullscreen"
   homepage "https://github.com/ManofJELLO/AeroSpace_Jello"
