@@ -1,6 +1,6 @@
 cask "aerospace-jello" do
-  version "0.21.3-jello.22"
-  sha256 "50e8056ccb98f42c2d0a111c17e492ba2a72667fa436e3e6bf5c910ff9357a74"
+  version "0.21.3-jello.23"
+  sha256 "670ce43acc34495689267aa32d80d87ba779f57f671f4d32c7b3c1375794fffd"
 
   url "https://github.com/ManofJELLO/AeroSpace_Jello/releases/download/v#{version}/AeroSpace-v#{version}.zip"
   name "AeroSpace (Jello fork)"
