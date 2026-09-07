@@ -13,14 +13,14 @@ cask "aerospace-jello" do
   app "AeroSpace-v#{version}/AeroSpace.app"
   binary "AeroSpace-v#{version}/bin/aerospace"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-dr", "com.apple.quarantine", "#{appdir}/AeroSpace.app"],
-                   must_succeed: false
-    system_command "/usr/bin/xattr",
-                   args:         ["-dr", "com.apple.quarantine",
-                                  "#{staged_path}/AeroSpace-v#{version}/bin/aerospace"],
-                   must_succeed: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/AeroSpace.app"],
+        must_succeed: false
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine",
+                       "{{staged_path}}/AeroSpace-v#{version}/bin/aerospace"],
+        must_succeed: false
   end
 
   zap trash: [
