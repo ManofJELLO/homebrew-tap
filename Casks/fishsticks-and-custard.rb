@@ -1,6 +1,6 @@
 cask "fishsticks-and-custard" do
-  version "0.10.0-beta.7"
-  sha256 "b64e4fa67d459b1f6db9fa29b93cc5e67f514dad66b9ea2f8795896281f279ef"
+  version "0.10.0"
+  sha256 "ba2435010af722e1732478584cd3a1e563f4b5c791c7a480837ae899b2ea012f"
 
   url "https://github.com/ManofJELLO/fishsticks-and-custard/releases/download/v#{version}/FishsticksAndCustard-#{version}.zip"
   name "Fishsticks & Custard"
